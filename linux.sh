@@ -3,6 +3,7 @@ echo "Welcome to Samuel Developer Setup!"
 echo "Selected: Linux - Debian/Ubuntu"
 echo "(!) NOTE: You'll need the apt package manager. If you don't know what this is, you probably already have it. If you've removed apt, stop this script and reinstall it."
 echo "This is gonna take a while, probably about 10 minutes, so sit down, grab a [insert kid-appropriate beverage here], and enjoy the install. If it finishes in a minute or 2, ask for help. That's NOT GOOD."
+sudo dpkg --add-architecture amd64
 echo "Step 1: Nodejs and NPM - A backend JavaScript runtime and package manager."
 mkdir ~/install
 cd ~/install
