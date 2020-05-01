@@ -12,7 +12,7 @@ curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o
 nano install_nvm.sh
 bash install_nvm.sh
 source ~/.profile
-nvm install 14.1.0
+nvm install node
 echo "Step 2: Atom - Atom is a text editor."
 wget https://atom-installer.github.com/v1.45.0/atom-amd64.deb
 sudo dpkg -i atom-amd64.deb
