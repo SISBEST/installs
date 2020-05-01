@@ -7,8 +7,12 @@ sudo dpkg --add-architecture amd64
 echo "Step 1: Nodejs and NPM - A backend JavaScript runtime and package manager."
 mkdir ~/install
 cd ~/install
-sudo curl -sL https://deb.nodesource.com/setup_14.x | bash -
-sudo apt-get install -y nodejs
+sudo apt install build-essential
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
+nano install_nvm.sh
+bash install_nvm.sh
+source ~/.profile
+nvm install 14.1.0
 echo "Step 2: Atom - Atom is a text editor."
 wget https://atom-installer.github.com/v1.45.0/atom-amd64.deb
 sudo dpkg -i atom-amd64.deb
