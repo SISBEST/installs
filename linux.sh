@@ -2,10 +2,11 @@
 echo "Welcome to Samuel Developer Setup!"
 echo "Selected: Linux - Debian/Ubuntu"
 echo "(!) NOTE: You'll need the apt package manager. If you don't know what this is, you probably already have it. If you've removed apt, stop this script and reinstall it."
+echo "This is gonna take a while, probably about 10 minutes, so sit down, grab a [insert kid-appropriate beverage here], and enjoy the install. If it finishes in a minute or 2, ask for help. That's NOT GOOD."
 echo "Step 1: Nodejs and NPM - A backend JavaScript runtime and package manager."
 mkdir ~/install
 cd ~/install
-curl -sL https://deb.nodesource.com/setup_14.x | bash -
+sudo curl -sL https://deb.nodesource.com/setup_14.x | bash -
 sudo apt-get install -y nodejs
 echo "Step 2: Atom - Atom is a text editor."
 wget https://atom-installer.github.com/v1.45.0/atom-amd64.deb
@@ -22,7 +23,7 @@ cd ~/install
 # File Icons
 apm install --production file-icons
 echo "Step 4: Firebase - Essential toolkit for web, Android, and iOS app devs."
-curl -sL https://firebase.tools | bash
+sudo curl -sL https://firebase.tools | bash
 echo "Step 5: Electron Forge CLI - Toolkit for Electron developers to make and package electron apps easily."
 sudo npm i -g @electron-forge/cli
 echo "Step 5: Heroku CLI - Easy, free app deployment."
